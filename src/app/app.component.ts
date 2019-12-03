@@ -9,14 +9,14 @@ import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   errMessage: string;
   note: Note;
   noteList: Array<Note> = [];
 
   constructor(private notesService: NotesService) {
     this.note = new Note;
-   
+
   }
 
   ngOnInit() {
@@ -40,7 +40,7 @@ export class AppComponent implements OnInit{
           this.errMessage = err.message;
         });
       this.note = new Note;
-    }else {
+    } else {
       this.errMessage = 'Title and Text both are required fields';
     }
 
