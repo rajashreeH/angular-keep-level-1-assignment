@@ -1,0 +1,14 @@
+.keep-note{
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    margin-left: 15vw;
+    margin-top: 5vh;
+}
+
+.note-card-container{
+    display: flex;
+    flex-direction: row;
+    margin:10vh 15vw;
+    justify-content: space-around;
+}
