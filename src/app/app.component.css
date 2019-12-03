@@ -6,6 +6,13 @@
     margin-top: 5vh;
 }
 
+.note-form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
 .note-card-container{
     display: flex;
     flex-direction: row;

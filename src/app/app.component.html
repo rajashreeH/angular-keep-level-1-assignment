@@ -6,6 +6,7 @@
             <mat-expansion-panel-header>
                 <mat-panel-title>Take a note</mat-panel-title>
             </mat-expansion-panel-header>
+            <div class="note-form">
             <mat-form-field>
                 <input matInput placeholder="enter note title" name="title" [(ngModel)]="note.title">
             </mat-form-field>
@@ -13,6 +14,7 @@
                 <textarea matInput placeholder="enter note text" name="text" [(ngModel)]="note.text"></textarea>
             </mat-form-field>
             <button class="btn btn-primary" (click)=add()>Done</button>
+        </div>
         </mat-expansion-panel>
     </mat-accordion>
 </div>
